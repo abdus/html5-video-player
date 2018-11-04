@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.player-wrapper {
+    position: relative;
+    height: 100%;
+    width: 95%;
+    max-width: 800px;
+    margin: 5rem auto;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.player {
+    height: 100%;
+    width: 100%;
+}
+.player video {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.controls {
+    position: absolute;
+    padding-bottom: 10px;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%) translateY(-10px);
+    transition: .20s ease-in all;
+}
+.player-wrapper:hover .controls {
+    transform: translateY(0);
+    background: #000000;
+}
+.progress-bar {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background: #a09e9e;
+    cursor: pointer;
+}
+.buffer-bar {
+    background: #f5dc6b;
+    width: 0;
+}
+.progress {
+    width: 0;
+    height: 7px;
+    background: #ff0000;
+    /* transition: .3s ease all; */
+}
+.c-buttons {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 95%;
+    margin: 7px auto;
+    margin-bottom: 0; 
+}
+.buffer-screen {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000ad;
+    transform: translateX(0);
+    z-index: 1000;
+    font-size: 4rem;
+    padding: 1rem;
+    color: white;
+}
+.no-buffer-screen {
+    transform: translateX(100%);
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}

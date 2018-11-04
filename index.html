@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/video.css">
+    <title>HTML5 VIDEO PLAYER</title>
+</head>
+<body>
+    <div class="player-wrapper">
+        <div class="player">
+            <video src="./assets/video/Typing on Keyboard of MacBook Pro.mp4">video element doesn't supported</video>
+        </div>
+        <div id="buffer-screen" class="no-buffer-screen">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+        <div class="controls">
+            <div class="progress-bar">
+                <div class="buffer-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="c-buttons">
+                <i class="fas fa-play" id="play-pause"></i>
+                <span id="video-time">00:00:00</span>
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
+
+<!-- https://www.azyaamode.com/files/videos/mp4/1_FACE_OF_YOUTUBE.mp4 -->
